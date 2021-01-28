@@ -17,11 +17,15 @@
 <body class="container" id="top">
 <header>
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <p class="navbar-brand" id="logo">JUICE’IT</p>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <span id="nav-icons-top" class="d-lg-none d-xl-none">
+                      <img src="https://img.icons8.com/ios/64/000000/search--v3.png"/>
+            <img src="https://img.icons8.com/pastel-glyph/64/000000/shopping-cart--v2.png"/>
+            </span>
+        <p class="navbar-brand" id="logo">JUICE’IT</p>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
@@ -40,9 +44,9 @@
                     <a class="nav-link" href="#contact">CONACT US</a>
                 </li>
             </ul>
-            <span id="nav-icons">
-                      <img src="https://img.icons8.com/ios/64/000000/search--v3.png"/>
-            <img src="https://img.icons8.com/pastel-glyph/64/000000/shopping-cart--v2.png"/>
+            <span id="nav-icons" class="d-none d-lg-block">
+                      <img id="search-logo" src="https://img.icons8.com/ios/64/000000/search--v3.png"/>
+            <img  id="cart-logo" src="https://img.icons8.com/pastel-glyph/64/000000/shopping-cart--v2.png"/>
             </span>
         </div>
     </nav>
@@ -83,14 +87,14 @@
     <img src="./pic/mixer.jpeg" class="img-fluid">
     <div class="container">
         <div class="row">
-            <div class="col container">
+            <div class="col-xl-6 col-sm-12 container">
                 <p class="title">Chooses the Priest</p>
                 <p class="content">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard
                 </p>
             </div>
-            <div class="col container">
+            <div class="col-xl-6 col-sm-12 container">
                 <p class="title">The Juiciest do the rest</p>
                 <p class="content">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -101,7 +105,7 @@
     </div>
 </section>
 <section id="user-story">
-    <img src="pic/jess.png">
+    <img src="pic/jess.png"><br><br>
     <p class="user-quote">“ Super easy to use and quickly blends everything to fresh
         juice. I primarily use to make my healthy snakes in the morning.
         Wold highly recommentend ! ”</p>
@@ -111,11 +115,11 @@
     <p class="title">What you can do with me ?</p>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-xl-6 col-sm-12 container">
                 <img src="pic/glass-red.jpeg" class="img-fluid">
                 <p class="content">Watermelon juice</p>
             </div>
-            <div class="col">
+            <div class="col-xl-6 col-sm-12 container">
                 <img src="pic/glass.jpg" class="img-fluid">
                 <p class="content">orange juice</p>
             </div>
@@ -127,7 +131,7 @@
     <p class="title">Contact us</p>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-xl-6 col-sm-12 container">
                 <form>
                     <div class="form-group">
                         <label for="exampleInputName">Name</label>
@@ -151,10 +155,12 @@
                         <input type="text" class="form-control" id="exampleInputMessage" aria-describedby="emailHelp"
                                placeholder="What you wont to share with us?">
                     </div>
-                    <button type="submit" class="btn btn-warning">Submit</button>
+                    <div class="button-warped text-center">
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>
                 </form>
             </div>
-            <div class="col">
+            <div class="col-xl-6 col-sm-12 container">
                 <ul>
                     <li class="location">
                         <p>our place</p>
@@ -165,7 +171,7 @@
                         <p>+ 1800 6589 5686</p>
                     </li>
                     <li class="mail">
-                        <p>We can cat too</p>
+                        <p>We can chat too</p>
                         <p><a href="mailto:mixer@gmail.com">mixer@gmail.com</a></p>
                     </li>
                 </ul>
@@ -174,7 +180,7 @@
     </div>
 </section>
 <div class="footer">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -205,7 +211,7 @@
         </div>
     </nav>
 </div>
-<a href="#" class="scrollup"><a href="https://www.jqueryscript.net/tags.php?/Scroll/">Scroll</a></a>
+<a href="#" class="scrollup"></a>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">

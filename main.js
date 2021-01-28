@@ -3,7 +3,8 @@
 $(window).on('load', function(){
     $('#loader').fadeOut(2000);
     $('#logo').slideDown(2500)
-    $('#nav-icons').show(3500)
+    $('#search-logo').show(3000)
+    $('#cart-logo').show1(3000)
 })
 
 $(document).ready(function(){

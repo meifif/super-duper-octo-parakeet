@@ -14,12 +14,14 @@ header img {
 
 header #logo {
     font-size: 40pt;
-    margin-right: 200px;
     color: #FF8B00;
+    padding: 0;
+    margin: 0;
 }
 
 #logo,
-#nav-icons {
+#search-logo,
+#cart-logo{
     display: none;
 }
 
@@ -110,6 +112,7 @@ section .title {
 
 #contact form {
     color: #FF9B00;
+    margin-bottom: 5px;
 }
 
 .footer img {
@@ -153,11 +156,8 @@ section .title {
 #contact li {
     list-style: none;
 }
-#contact .phone::before {
-    content: '';
-    display: inline-block;
-    width: 100px;
-    background-image:  url('pic/phone-icon.png');
+#contact .phone {
+    list-style-image:  url('pic/phone-icon.png');
 }
 
 #contact .mail {
@@ -166,4 +166,25 @@ section .title {
 
 #contact .location {
     list-style-image: url('pic/location-icon.png');
+}
+
+#product-details p.content {
+    width: 45%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+form .button-warped {
+    text-align: center;
+}
+
+#contact button {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin:10px;
+}
+
+#nav-icons-top {
+    flex: auto;
 }
